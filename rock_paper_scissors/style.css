@@ -1,0 +1,48 @@
+.image{
+    height: 150px;
+    width: 120px;
+    
+    
+   /* border-radius: 50%;
+    background-color: transparent;*/
+
+   cursor: pointer;
+   
+}
+.btn:hover{
+    border: 1px solid yellow;
+    box-shadow: 0 0 10px yellow;
+}
+.btn{
+    background-color: transparent;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+   padding: 10px 20px;
+   border-radius: 50%;
+   border: 2px solid white;
+    cursor: pointer;
+    
+}
+body{
+    background-color: rgb(15,15,15);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+.reset{
+    font-family: arial;
+    height: 50px;
+    font-weight: bold;
+}
+.reset:hover{
+    border: 2px solid red;
+    box-shadow: 0 0 10px red;
+}
+.result{
+  font-weight: bold;
+  color: green;
+  font-size: 50px;
+}
