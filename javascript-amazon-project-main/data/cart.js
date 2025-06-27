@@ -1,6 +1,4 @@
-let cart=[{
-    
-}
+let cart=[
   
 
 ]
