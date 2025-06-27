@@ -1,4 +1,4 @@
-
+import {cart} from '../data/cart.js'
 let productsHTML=''
 products.forEach((product)=>{
     productsHTML += ` <div class="product-container">
@@ -83,8 +83,7 @@ document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
 
             })
             document.querySelector('.cart-quantity').innerHTML=totalQuantity
-            console.log(totalQuantity)
-            console.log(cart)
+            
         }
         )
 })
