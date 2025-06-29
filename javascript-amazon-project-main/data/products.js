@@ -1,3 +1,13 @@
+export function findProduct(productId){
+  let matchingItem;
+    products.forEach((product)=>{
+        if(product.id === productId){
+            matchingItem=product
+        }
+    })
+    return matchingItem;
+}
+
 export let products = [
   {
     id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
