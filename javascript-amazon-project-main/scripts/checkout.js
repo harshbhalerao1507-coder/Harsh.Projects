@@ -5,11 +5,8 @@ import {deliveryOptions,findDeliveryoption} from '../data/deliveryOptions.js'
 import { renderPaymentsummary } from './paymentSummary.js'
 
 
- const today=dayjs()
- const deliveryDate=today.add(7,'days')
-
-
  
+
  function renderOrdersummary(){
 let checkoutHtml=''
 cart.forEach((cartItem)=>{
@@ -110,6 +107,7 @@ document.querySelectorAll('.js-delete-link').forEach((link)=>{
     link.addEventListener('click',()=>{
         const productId=link.dataset.productId
         removeFromcart(productId)
+        renderPaymentsummary()
         document.querySelector(`.js-cart-item-${productId}`).remove()
         })
 })
@@ -120,6 +118,7 @@ document.querySelectorAll('.delivery-option').forEach((element)=>{
      
     updateDeliveryoption(productId,deliveryOptionId)
     renderOrdersummary()
+    renderPaymentsummary()
   })
 })
  }
